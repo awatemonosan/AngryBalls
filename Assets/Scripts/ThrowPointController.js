@@ -18,6 +18,7 @@ function Update () {
   	  Application.LoadLevel('Main');
   	}
   	selection.GetComponent(Rigidbody).useGravity=false;
+    selection.GetComponent(Rigidbody).velocity=new Vector3();
   } else {
   	if(!selection.GetComponent(BallFlightController).enabled){
       Camera.main.transform.position = Vector3.Lerp(
